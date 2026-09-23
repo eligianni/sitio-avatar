@@ -313,10 +313,9 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-color: var(--bg-deep);
   background-image: url('../assets/img/fondo-inicio-principal.png');
-  background-size: clamp(440px, 56vw, 780px);
-  background-position: center 32%;
+  background-size: cover;
+  background-position: center 30%;
   background-repeat: no-repeat;
   overflow: hidden;
 }
