@@ -992,7 +992,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   font-size: 0.85rem;
   color: var(--ink-dim);
   margin-bottom: var(--gap-xs);
-  margin-top: 1 rem;
+  margin: 1 rem;
 }
 
 .pagina-hero h1 {
@@ -1125,7 +1125,7 @@ body.pagina-historia .cta-final {
   width: min(880px, 92%);
   margin-inline: auto;
   text-align: center;
-  padding: 7rem 2rem;
+  padding: 9rem 2rem;
   border-radius: 28px;
   background: radial-gradient(ellipse 80% 70% at center, rgba(9,12,10,0.55) 0%, transparent 75%);
 }
@@ -1264,12 +1264,12 @@ body.pagina-historia .cta-final {
 .libro-seccion { padding-block: 1.5rem; border-top: 1px solid var(--line); }
 
 .libro-seccion__interior {
-  max-width: 720px;
+  max-width: 900px;
   margin-inline: auto;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 2rem 2.2rem;
+  padding: 2rem 3.2rem;
   border-radius: 20px;
   background: rgba(10, 13, 12, 0.62);
   backdrop-filter: blur(3px);
