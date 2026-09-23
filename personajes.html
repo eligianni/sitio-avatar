@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personajes — Ficha de equipo | Avatar: La Leyenda de Aang</title>
+<meta name="description" content="Catálogo completo de personajes de Avatar: La Leyenda de Aang, con estadísticas al estilo videojuego y habilidades ocultas para descubrir.">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pagina-personajes">
+
+<div class="personajes-fondo-fijo" aria-hidden="true">
+  <div class="personajes-fondo-fijo__velo"></div>
+</div>
+
+<div id="preloader" aria-hidden="true">
+  <div class="preloader__simbolos">
+    <span class="preloader__simbolo agua" data-elemento="agua"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6C24 6 12 22 12 30a12 12 0 0 0 24 0C36 22 24 6 24 6Z" stroke-width="2" stroke-linejoin="round"/></svg></span>
+    <span class="preloader__simbolo tierra" data-elemento="tierra"><svg viewBox="0 0 48 48" fill="none"><path d="M6 34 18 14l6 10 4-6 14 26H6Z" stroke-width="2" stroke-linejoin="round"/></svg></span>
+    <span class="preloader__simbolo fuego" data-elemento="fuego"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6c4 8-4 10-4 16a8 8 0 0 0 16 0c0-6-4-8-2-14 6 4 10 12 10 18a16 16 0 0 1-32 0c0-8 6-14 12-20Z" stroke-width="2" stroke-linejoin="round"/></svg></span>
+    <span class="preloader__simbolo aire" data-elemento="aire"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="4" stroke-width="2"/><path d="M24 4c8 0 8 10 0 10M44 24c0 8-10 8-10 0M24 44c-8 0-8-10 0-10M4 24c0-8 10-8 10 0" stroke-width="2" stroke-linecap="round"/></svg></span>
+  </div>
+  <span class="preloader__texto">EQUILIBRANDO LOS CUATRO ELEMENTOS</span>
+</div>
+
+<header class="navbar">
+  <a href="index.html" class="navbar__marca">
+    <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="20" stroke="var(--air-1)" stroke-width="1.5"/><path d="M20 12H28V24H34L24 35L14 24H20V12Z" fill="var(--ink)"/></svg>
+    <span>Avatar</span>
+  </a>
+  <button class="navbar__toggle" id="navToggle" aria-expanded="false" aria-controls="navLista" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  <nav aria-label="Navegación principal">
+    <ul class="navbar__lista" id="navLista">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="historia.html">Historia</a></li>
+            <li class="navbar__item--con-submenu">
+        <a href="libros.html">Libros</a>
+        <ul class="navbar__submenu">
+          <li><a href="libros.html#libro-agua">Libro Agua</a></li>
+          <li><a href="libros.html#libro-tierra">Libro Tierra</a></li>
+          <li><a href="libros.html#libro-fuego">Libro Fuego</a></li>
+          <li><a href="libros.html#aun-hay-mas">Cómics</a></li>
+        </ul>
+      </li>
+      <li><a href="personajes.html" class="active" aria-current="page">Personajes</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="personajes-cielo" aria-labelledby="personajes-titulo">
+    <div class="personajes-cielo__velo"></div>
+    <div class="contenedor personajes-cielo__contenido">
+      <span class="pagina-hero__kicker">Ficha de equipo</span>
+      <h1 id="personajes-titulo">Personajes</h1>
+      <p>El Equipo Avatar, sus aliados y los villanos principales — con estadísticas de combate y una habilidad oculta por descubrir en cada ficha.</p>
+    </div>
+  </section>
+
+  <section class="personajes-seccion">
+    <div class="contenedor personajes-panel">
+      <div class="personajes-grid">
+
+      <!-- AANG -->
+      <article class="personaje-tarjeta" data-elemento="aire">
+        <div class="personaje-tarjeta__img">
+          <img src="assets/img/personajes/aang.jpg" alt="Aang" loading="lazy">
+          <span class="personaje-tarjeta__simbolo-esquina"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="4" stroke="var(--air-1)" stroke-width="2.5"/><path d="M24 4c8 0 8 10 0 10M44 24c0 8-10 8-10 0M24 44c-8 0-8-10 0-10M4 24c0-8 10-8 10 0" stroke="var(--air-1)" stroke-width="2.5" stroke-linecap="round"/></svg></span>
+        </div>
+        <div class="personaje-tarjeta__cuerpo">
+          <h3 class="personaje-tarjeta__nombre">Aang</h3>
+          <p class="personaje-tarjeta__rol">El último Avatar, sobreviviente de los Nómadas Aire. Pasó 100 años congelado en un iceberg y ahora debe dominar los cuatro elementos para detener la guerra.</p>
+          <div class="stats">
+            <div class="stat-fila"><span>Dominio</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:95%"></div></div><span class="stat-valor">95</span></div>
+            <div class="stat-fila"><span>Velocidad</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:90%"></div></div><span class="stat-valor">90</span></div>
+            <div class="stat-fila"><span>Astucia</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:70%"></div></div><span class="stat-valor">70</span></div>
+          </div>
+          <button class="habilidad-oculta" type="button">
+            <span class="habilidad-oculta__etiqueta">Habilidad oculta</span>
+            <span class="habilidad-oculta__valor">Estado Avatar</span>
+            <span class="habilidad-oculta__pista">Click para revelar</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- KATARA -->
+      <article class="personaje-tarjeta" data-elemento="agua">
+        <div class="personaje-tarjeta__img">
+          <img src="assets/img/personajes/katara-1.jpg" alt="Katara" loading="lazy">
+          <span class="personaje-tarjeta__simbolo-esquina"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6C24 6 12 22 12 30a12 12 0 0 0 24 0C36 22 24 6 24 6Z" stroke="var(--water-2)" stroke-width="2.5" stroke-linejoin="round"/></svg></span>
+        </div>
+        <div class="personaje-tarjeta__cuerpo">
+          <h3 class="personaje-tarjeta__nombre">Katara</h3>
+          <p class="personaje-tarjeta__rol">Maestra Agua de la Tribu del Sur. Encontró a Aang en el iceberg junto a su hermano y se convirtió en su primera maestra de Agua control.</p>
+          <div class="stats">
+            <div class="stat-fila"><span>Dominio</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:90%"></div></div><span class="stat-valor">90</span></div>
+            <div class="stat-fila"><span>Velocidad</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:65%"></div></div><span class="stat-valor">65</span></div>
+            <div class="stat-fila"><span>Astucia</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:75%"></div></div><span class="stat-valor">75</span></div>
+          </div>
+          <button class="habilidad-oculta" type="button">
+            <span class="habilidad-oculta__etiqueta">Habilidad oculta</span>
+            <span class="habilidad-oculta__valor">Sangre control</span>
+            <span class="habilidad-oculta__pista">Click para revelar</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- SOKKA -->
+      <article class="personaje-tarjeta" data-elemento="ninguno">
+        <div class="personaje-tarjeta__img">
+          <img src="assets/img/personajes/sokka.jpg" alt="Sokka" loading="lazy">
+          <span class="personaje-tarjeta__simbolo-esquina"><svg viewBox="0 0 48 48" fill="none"><path d="M24 8c-9 6-9 22 0 32 9-10 9-26 0-32Z" stroke="var(--creature)" stroke-width="2.5" stroke-linejoin="round"/></svg></span>
+        </div>
+        <div class="personaje-tarjeta__cuerpo">
+          <h3 class="personaje-tarjeta__nombre">Sokka</h3>
+          <p class="personaje-tarjeta__rol">Guerrero de la Tribu Agua del Sur, hermano de Katara. Sin dominio elemental, compensa con estrategia, ingenio y un humor que no siempre cae bien.</p>
+          <div class="stats">
+            <div class="stat-fila"><span>Dominio</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:10%"></div></div><span class="stat-valor">10</span></div>
+            <div class="stat-fila"><span>Velocidad</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:60%"></div></div><span class="stat-valor">60</span></div>
+            <div class="stat-fila"><span>Astucia</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:95%"></div></div><span class="stat-valor">95</span></div>
+          </div>
+          <button class="habilidad-oculta" type="button">
+            <span class="habilidad-oculta__etiqueta">Habilidad oculta</span>
+            <span class="habilidad-oculta__valor">Suerte inexplicable</span>
+            <span class="habilidad-oculta__pista">Click para revelar</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- TOPH -->
+      <article class="personaje-tarjeta" data-elemento="tierra">
+        <div class="personaje-tarjeta__img">
+          <img src="assets/img/personajes/toph.jpg" alt="Toph" loading="lazy">
+          <span class="personaje-tarjeta__simbolo-esquina"><svg viewBox="0 0 48 48" fill="none"><path d="M6 34 18 14l6 10 4-6 14 26H6Z" stroke="var(--earth-2)" stroke-width="2.5" stroke-linejoin="round"/></svg></span>
+        </div>
+        <div class="personaje-tarjeta__cuerpo">
+          <h3 class="personaje-tarjeta__nombre">Toph</h3>
+          <p class="personaje-tarjeta__rol">Maestra Tierra invidente y la mejor de su generación. "Ve" a través de las vibraciones del suelo, lo que la hace prácticamente imposible de engañar.</p>
+          <div class="stats">
+            <div class="stat-fila"><span>Dominio</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:97%"></div></div><span class="stat-valor">97</span></div>
+            <div class="stat-fila"><span>Velocidad</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:55%"></div></div><span class="stat-valor">55</span></div>
+            <div class="stat-fila"><span>Astucia</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:80%"></div></div><span class="stat-valor">80</span></div>
+          </div>
+          <button class="habilidad-oculta" type="button">
+            <span class="habilidad-oculta__etiqueta">Habilidad oculta</span>
+            <span class="habilidad-oculta__valor">Metalurgia</span>
+            <span class="habilidad-oculta__pista">Click para revelar</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- ZUKO -->
+      <article class="personaje-tarjeta" data-elemento="fuego">
+        <div class="personaje-tarjeta__img">
+          <img src="assets/img/personajes/zuko.jpg" alt="Zuko" loading="lazy">
+          <span class="personaje-tarjeta__simbolo-esquina"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6c4 8-4 10-4 16a8 8 0 0 0 16 0c0-6-4-8-2-14 6 4 10 12 10 18a16 16 0 0 1-32 0c0-8 6-14 12-20Z" stroke="var(--fire-2)" stroke-width="2.5" stroke-linejoin="round"/></svg></span>
+        </div>
+        <div class="personaje-tarjeta__cuerpo">
+          <h3 class="personaje-tarjeta__nombre">Zuko</h3>
+          <p class="personaje-tarjeta__rol">Príncipe exiliado de la Nación del Fuego. Persigue al Avatar para recuperar su honor y el trono que su padre le arrebató.</p>
+          <div class="stats">
+            <div class="stat-fila"><span>Dominio</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:85%"></div></div><span class="stat-valor">85</span></div>
+            <div class="stat-fila"><span>Velocidad</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:75%"></div></div><span class="stat-valor">75</span></div>
+            <div class="stat-fila"><span>Astucia</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:65%"></div></div><span class="stat-valor">65</span></div>
+          </div>
+          <button class="habilidad-oculta" type="button">
+            <span class="habilidad-oculta__etiqueta">Habilidad oculta</span>
+            <span class="habilidad-oculta__valor">El mejor espadachín de la Nación del Fuego</span>
+            <span class="habilidad-oculta__pista">Click para revelar</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- IROH -->
+      <article class="personaje-tarjeta" data-elemento="fuego">
+        <div class="personaje-tarjeta__img">
+          <img src="assets/img/personajes/iroh.jpg" alt="Iroh" loading="lazy">
+          <span class="personaje-tarjeta__simbolo-esquina"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6c4 8-4 10-4 16a8 8 0 0 0 16 0c0-6-4-8-2-14 6 4 10 12 10 18a16 16 0 0 1-32 0c0-8 6-14 12-20Z" stroke="var(--fire-2)" stroke-width="2.5" stroke-linejoin="round"/></svg></span>
+        </div>
+        <div class="personaje-tarjeta__cuerpo">
+          <h3 class="personaje-tarjeta__nombre">Iroh</h3>
+          <p class="personaje-tarjeta__rol">El Dragón del Oeste y mentor de Zuko. General retirado de la Nación del Fuego, hoy prefiere el té y la sabiduría a la conquista.</p>
+          <div class="stats">
+            <div class="stat-fila"><span>Dominio</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:98%"></div></div><span class="stat-valor">98</span></div>
+            <div class="stat-fila"><span>Velocidad</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:40%"></div></div><span class="stat-valor">40</span></div>
+            <div class="stat-fila"><span>Astucia</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:95%"></div></div><span class="stat-valor">95</span></div>
+          </div>
+          <button class="habilidad-oculta" type="button">
+            <span class="habilidad-oculta__etiqueta">Habilidad oculta</span>
+            <span class="habilidad-oculta__valor">Redirección del rayo</span>
+            <span class="habilidad-oculta__pista">Click para revelar</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- AZULA -->
+      <article class="personaje-tarjeta" data-elemento="fuego">
+        <div class="personaje-tarjeta__img">
+          <img src="assets/img/personajes/azula.jpg" alt="Azula" loading="lazy">
+          <span class="personaje-tarjeta__simbolo-esquina"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6c4 8-4 10-4 16a8 8 0 0 0 16 0c0-6-4-8-2-14 6 4 10 12 10 18a16 16 0 0 1-32 0c0-8 6-14 12-20Z" stroke="var(--fire-2)" stroke-width="2.5" stroke-linejoin="round"/></svg></span>
+        </div>
+        <div class="personaje-tarjeta__cuerpo">
+          <h3 class="personaje-tarjeta__nombre">Azula</h3>
+          <p class="personaje-tarjeta__rol">Princesa de la Nación del Fuego y prodigio del combate. Fría, calculadora y temida incluso dentro de su propia familia.</p>
+          <div class="stats">
+            <div class="stat-fila"><span>Dominio</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:97%"></div></div><span class="stat-valor">97</span></div>
+            <div class="stat-fila"><span>Velocidad</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:85%"></div></div><span class="stat-valor">85</span></div>
+            <div class="stat-fila"><span>Astucia</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:90%"></div></div><span class="stat-valor">90</span></div>
+          </div>
+          <button class="habilidad-oculta" type="button">
+            <span class="habilidad-oculta__etiqueta">Habilidad oculta</span>
+            <span class="habilidad-oculta__valor">Fuego azul, el más caliente de todos</span>
+            <span class="habilidad-oculta__pista">Click para revelar</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- SUKI -->
+      <article class="personaje-tarjeta" data-elemento="ninguno">
+        <div class="personaje-tarjeta__img">
+          <img src="assets/img/personajes/suki.jpg" alt="Suki" loading="lazy">
+          <span class="personaje-tarjeta__simbolo-esquina"><svg viewBox="0 0 48 48" fill="none"><path d="M24 8c-9 6-9 22 0 32 9-10 9-26 0-32Z" stroke="var(--creature)" stroke-width="2.5" stroke-linejoin="round"/></svg></span>
+        </div>
+        <div class="personaje-tarjeta__cuerpo">
+          <h3 class="personaje-tarjeta__nombre">Suki</h3>
+          <p class="personaje-tarjeta__rol">Líder de las Guerreras Kyoshi. Entrenó a Sokka en su propio estilo de combate y terminó uniéndose al grupo por su cuenta.</p>
+          <div class="stats">
+            <div class="stat-fila"><span>Dominio</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:5%"></div></div><span class="stat-valor">5</span></div>
+            <div class="stat-fila"><span>Velocidad</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:80%"></div></div><span class="stat-valor">80</span></div>
+            <div class="stat-fila"><span>Astucia</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:85%"></div></div><span class="stat-valor">85</span></div>
+          </div>
+          <button class="habilidad-oculta" type="button">
+            <span class="habilidad-oculta__etiqueta">Habilidad oculta</span>
+            <span class="habilidad-oculta__valor">Líder de las Guerreras Kyoshi</span>
+            <span class="habilidad-oculta__pista">Click para revelar</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- MAI -->
+      <article class="personaje-tarjeta" data-elemento="fuego">
+        <div class="personaje-tarjeta__img">
+          <img src="assets/img/personajes/Mai.jpg" alt="Mai" loading="lazy">
+          <span class="personaje-tarjeta__simbolo-esquina"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6c4 8-4 10-4 16a8 8 0 0 0 16 0c0-6-4-8-2-14 6 4 10 12 10 18a16 16 0 0 1-32 0c0-8 6-14 12-20Z" stroke="var(--fire-2)" stroke-width="2.5" stroke-linejoin="round"/></svg></span>
+        </div>
+        <div class="personaje-tarjeta__cuerpo">
+          <h3 class="personaje-tarjeta__nombre">Mai</h3>
+          <p class="personaje-tarjeta__rol">Hija de una familia noble de la Nación del Fuego. Sin dominio elemental, pero letal con cuchillos arrojadizos y prácticamente imperturbable.</p>
+          <div class="stats">
+            <div class="stat-fila"><span>Dominio</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:5%"></div></div><span class="stat-valor">5</span></div>
+            <div class="stat-fila"><span>Velocidad</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:80%"></div></div><span class="stat-valor">80</span></div>
+            <div class="stat-fila"><span>Astucia</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:88%"></div></div><span class="stat-valor">88</span></div>
+          </div>
+          <button class="habilidad-oculta" type="button">
+            <span class="habilidad-oculta__etiqueta">Habilidad oculta</span>
+            <span class="habilidad-oculta__valor">Precisión letal con cuchillos</span>
+            <span class="habilidad-oculta__pista">Click para revelar</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- YUE -->
+      <article class="personaje-tarjeta" data-elemento="agua">
+        <div class="personaje-tarjeta__img">
+          <img src="assets/img/personajes/yue.jpg" alt="Princesa Yue" loading="lazy">
+          <span class="personaje-tarjeta__simbolo-esquina"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6C24 6 12 22 12 30a12 12 0 0 0 24 0C36 22 24 6 24 6Z" stroke="var(--water-2)" stroke-width="2.5" stroke-linejoin="round"/></svg></span>
+        </div>
+        <div class="personaje-tarjeta__cuerpo">
+          <h3 class="personaje-tarjeta__nombre">Yue</h3>
+          <p class="personaje-tarjeta__rol">Princesa de la Tribu Agua del Norte. Su destino está ligado desde su nacimiento al Espíritu de la Luna, algo que se revela durante el asedio a su tribu.</p>
+          <div class="stats">
+            <div class="stat-fila"><span>Dominio</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:20%"></div></div><span class="stat-valor">20</span></div>
+            <div class="stat-fila"><span>Velocidad</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:45%"></div></div><span class="stat-valor">45</span></div>
+            <div class="stat-fila"><span>Astucia</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:75%"></div></div><span class="stat-valor">75</span></div>
+          </div>
+          <button class="habilidad-oculta" type="button">
+            <span class="habilidad-oculta__etiqueta">Habilidad oculta</span>
+            <span class="habilidad-oculta__valor">Se convirtió en el Espíritu de la Luna</span>
+            <span class="habilidad-oculta__pista">Click para revelar</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- ROKU -->
+      <article class="personaje-tarjeta" data-elemento="fuego">
+        <div class="personaje-tarjeta__img">
+          <img src="assets/img/personajes/roku.jpg" alt="Avatar Roku" loading="lazy">
+          <span class="personaje-tarjeta__simbolo-esquina"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6c4 8-4 10-4 16a8 8 0 0 0 16 0c0-6-4-8-2-14 6 4 10 12 10 18a16 16 0 0 1-32 0c0-8 6-14 12-20Z" stroke="var(--fire-2)" stroke-width="2.5" stroke-linejoin="round"/></svg></span>
+        </div>
+        <div class="personaje-tarjeta__cuerpo">
+          <h3 class="personaje-tarjeta__nombre">Roku</h3>
+          <p class="personaje-tarjeta__rol">El Avatar anterior a Aang, originario de la Nación del Fuego. Le habló a Sozin de los peligros de su ambición mucho antes de la guerra.</p>
+          <div class="stats">
+            <div class="stat-fila"><span>Dominio</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:96%"></div></div><span class="stat-valor">96</span></div>
+            <div class="stat-fila"><span>Velocidad</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:55%"></div></div><span class="stat-valor">55</span></div>
+            <div class="stat-fila"><span>Astucia</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:90%"></div></div><span class="stat-valor">90</span></div>
+          </div>
+          <button class="habilidad-oculta" type="button">
+            <span class="habilidad-oculta__etiqueta">Habilidad oculta</span>
+            <span class="habilidad-oculta__valor">Vínculo espiritual con Aang</span>
+            <span class="habilidad-oculta__pista">Click para revelar</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- BUMI -->
+      <article class="personaje-tarjeta" data-elemento="tierra">
+        <div class="personaje-tarjeta__img">
+          <img src="assets/img/personajes/bumi.jpg" alt="Rey Bumi" loading="lazy">
+          <span class="personaje-tarjeta__simbolo-esquina"><svg viewBox="0 0 48 48" fill="none"><path d="M6 34 18 14l6 10 4-6 14 26H6Z" stroke="var(--earth-2)" stroke-width="2.5" stroke-linejoin="round"/></svg></span>
+        </div>
+        <div class="personaje-tarjeta__cuerpo">
+          <h3 class="personaje-tarjeta__nombre">Bumi</h3>
+          <p class="personaje-tarjeta__rol">Rey de Omashu y viejo amigo de Aang de antes de la guerra. Su forma de pelear es tan excéntrica como su forma de gobernar.</p>
+          <div class="stats">
+            <div class="stat-fila"><span>Dominio</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:99%"></div></div><span class="stat-valor">99</span></div>
+            <div class="stat-fila"><span>Velocidad</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:35%"></div></div><span class="stat-valor">35</span></div>
+            <div class="stat-fila"><span>Astucia</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:92%"></div></div><span class="stat-valor">92</span></div>
+          </div>
+          <button class="habilidad-oculta" type="button">
+            <span class="habilidad-oculta__etiqueta">Habilidad oculta</span>
+            <span class="habilidad-oculta__valor">Rey loco... y genio de la Tierra control</span>
+            <span class="habilidad-oculta__pista">Click para revelar</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- GURÚ PATHIK -->
+      <article class="personaje-tarjeta" data-elemento="ninguno">
+        <div class="personaje-tarjeta__img">
+          <img src="assets/img/personajes/pathik.jpg" alt="Gurú Pathik" loading="lazy">
+          <span class="personaje-tarjeta__simbolo-esquina"><svg viewBox="0 0 48 48" fill="none"><path d="M24 8c-9 6-9 22 0 32 9-10 9-26 0-32Z" stroke="var(--creature)" stroke-width="2.5" stroke-linejoin="round"/></svg></span>
+        </div>
+        <div class="personaje-tarjeta__cuerpo">
+          <h3 class="personaje-tarjeta__nombre">Gurú Pathik</h3>
+          <p class="personaje-tarjeta__rol">Guía espiritual que vive aislado en el Monte Potala. Ayuda a Aang a enfrentar aquello que lo bloquea por dentro para acceder al Estado Avatar.</p>
+          <div class="stats">
+            <div class="stat-fila"><span>Dominio</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:40%"></div></div><span class="stat-valor">40</span></div>
+            <div class="stat-fila"><span>Velocidad</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:20%"></div></div><span class="stat-valor">20</span></div>
+            <div class="stat-fila"><span>Astucia</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:99%"></div></div><span class="stat-valor">99</span></div>
+          </div>
+          <button class="habilidad-oculta" type="button">
+            <span class="habilidad-oculta__etiqueta">Habilidad oculta</span>
+            <span class="habilidad-oculta__valor">Desbloqueo de chakras</span>
+            <span class="habilidad-oculta__pista">Click para revelar</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- APPA -->
+      <article class="personaje-tarjeta" data-elemento="ninguno">
+        <div class="personaje-tarjeta__img">
+          <img src="assets/img/personajes/appa.jpg" alt="Appa" loading="lazy">
+          <span class="personaje-tarjeta__simbolo-esquina"><svg viewBox="0 0 48 48" fill="none"><circle cx="16" cy="18" r="4" stroke="var(--creature)" stroke-width="2.5"/><circle cx="24" cy="13" r="4" stroke="var(--creature)" stroke-width="2.5"/><circle cx="32" cy="18" r="4" stroke="var(--creature)" stroke-width="2.5"/><circle cx="24" cy="31" r="8" stroke="var(--creature)" stroke-width="2.5"/></svg></span>
+        </div>
+        <div class="personaje-tarjeta__cuerpo">
+          <h3 class="personaje-tarjeta__nombre">Appa</h3>
+          <p class="personaje-tarjeta__rol">Bisonte volador y compañero fiel de Aang desde el Templo Aire. Los lleva a todos de nación en nación sin importar la distancia.</p>
+          <div class="stats">
+            <div class="stat-fila"><span>Fuerza</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:90%"></div></div><span class="stat-valor">90</span></div>
+            <div class="stat-fila"><span>Velocidad</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:80%"></div></div><span class="stat-valor">80</span></div>
+            <div class="stat-fila"><span>Lealtad</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:100%"></div></div><span class="stat-valor">100</span></div>
+          </div>
+          <button class="habilidad-oculta" type="button">
+            <span class="habilidad-oculta__etiqueta">Habilidad oculta</span>
+            <span class="habilidad-oculta__valor">Sentido de orientación espiritual</span>
+            <span class="habilidad-oculta__pista">Click para revelar</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- TY LEE -->
+      <article class="personaje-tarjeta" data-elemento="fuego">
+        <div class="personaje-tarjeta__img">
+          <img src="assets/img/personajes/ty-lee.jpg" alt="Ty Lee" loading="lazy">
+          <span class="personaje-tarjeta__simbolo-esquina"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6c4 8-4 10-4 16a8 8 0 0 0 16 0c0-6-4-8-2-14 6 4 10 12 10 18a16 16 0 0 1-32 0c0-8 6-14 12-20Z" stroke="var(--fire-2)" stroke-width="2.5" stroke-linejoin="round"/></svg></span>
+        </div>
+        <div class="personaje-tarjeta__cuerpo">
+          <h3 class="personaje-tarjeta__nombre">Ty Lee</h3>
+          <p class="personaje-tarjeta__rol">Acróbata formidable y amiga de Azula. Domina la técnica del bloqueo de chi, inmovilizando los músculos y el poder de los maestros elementales con golpes veloces.</p>
+          <div class="stats">
+            <div class="stat-fila"><span>Dominio</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:15%"></div></div><span class="stat-valor">15</span></div>
+            <div class="stat-fila"><span>Velocidad</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:96%"></div></div><span class="stat-valor">96</span></div>
+            <div class="stat-fila"><span>Astucia</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:85%"></div></div><span class="stat-valor">85</span></div>
+          </div>
+          <button class="habilidad-oculta" type="button">
+            <span class="habilidad-oculta__etiqueta">Habilidad oculta</span>
+            <span class="habilidad-oculta__valor">Bloqueo de chi</span>
+            <span class="habilidad-oculta__pista">Click para revelar</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- MOMO -->
+      <article class="personaje-tarjeta" data-elemento="aire">
+        <div class="personaje-tarjeta__img">
+          <img src="assets/img/personajes/momo.jpg" alt="Momo" loading="lazy">
+          <span class="personaje-tarjeta__simbolo-esquina"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="4" stroke="var(--air-1)" stroke-width="2.5"/><path d="M24 4c8 0 8 10 0 10M44 24c0 8-10 8-10 0M24 44c-8 0-8-10 0-10M4 24c0-8 10-8 10 0" stroke="var(--air-1)" stroke-width="2.5" stroke-linecap="round"/></svg></span>
+        </div>
+        <div class="personaje-tarjeta__cuerpo">
+          <h3 class="personaje-tarjeta__nombre">Momo</h3>
+          <p class="personaje-tarjeta__rol">Lémur volador hallado por Aang en el Templo Aire del Sur. Curioso, intrépido y con una habilidad innata para colarse en cualquier lugar y salir ileso.</p>
+          <div class="stats">
+            <div class="stat-fila"><span>Fuerza</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:15%"></div></div><span class="stat-valor">15</span></div>
+            <div class="stat-fila"><span>Velocidad</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:95%"></div></div><span class="stat-valor">95</span></div>
+            <div class="stat-fila"><span>Lealtad</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:98%"></div></div><span class="stat-valor">98</span></div>
+          </div>
+          <button class="habilidad-oculta" type="button">
+            <span class="habilidad-oculta__etiqueta">Habilidad oculta</span>
+            <span class="habilidad-oculta__valor">Vuelo acrobático y sigilo</span>
+            <span class="habilidad-oculta__pista">Click para revelar</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- KYOSHI -->
+      <article class="personaje-tarjeta" data-elemento="tierra">
+        <div class="personaje-tarjeta__img">
+          <img src="assets/img/personajes/KIYOSHI.jpg" alt="Avatar Kyoshi" loading="lazy">
+          <span class="personaje-tarjeta__simbolo-esquina"><svg viewBox="0 0 48 48" fill="none"><path d="M6 34 18 14l6 10 4-6 14 26H6Z" stroke="var(--earth-2)" stroke-width="2.5" stroke-linejoin="round"/></svg></span>
+        </div>
+        <div class="personaje-tarjeta__cuerpo">
+          <h3 class="personaje-tarjeta__nombre">Kyoshi</h3>
+          <p class="personaje-tarjeta__rol">Avatar legendaria nacida en el Reino Tierra. Con una estatura imponente y justicia inquebrantable, separó la península para proteger a su pueblo y creó la Isla Kyoshi.</p>
+          <div class="stats">
+            <div class="stat-fila"><span>Dominio</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:99%"></div></div><span class="stat-valor">99</span></div>
+            <div class="stat-fila"><span>Velocidad</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:75%"></div></div><span class="stat-valor">75</span></div>
+            <div class="stat-fila"><span>Astucia</span><div class="stat-barra"><div class="stat-barra__relleno" style="width:94%"></div></div><span class="stat-valor">94</span></div>
+          </div>
+          <button class="habilidad-oculta" type="button">
+            <span class="habilidad-oculta__etiqueta">Habilidad oculta</span>
+            <span class="habilidad-oculta__valor">Creó la Isla Kyoshi con Tierra y Lava control</span>
+            <span class="habilidad-oculta__pista">Click para revelar</span>
+          </button>
+        </div>
+      </article>
+
+    </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor pie__contenido">
+    <div class="pie__fila-principal">
+      <div class="pie__marca">
+        <a href="index.html" class="pie__logo">
+          <svg viewBox="0 0 48 48" fill="none" aria-hidden="true" width="28" height="28">
+            <circle cx="24" cy="24" r="20" stroke="var(--air-1)" stroke-width="1.5"/>
+            <path d="M20 12H28V24H34L24 35L14 24H20V12Z" fill="var(--ink)"/>
+          </svg>
+          <span>Avatar: La Leyenda de Aang</span>
+        </a>
+        <p class="pie__legales">
+          Avatar: The Last Airbender es una creación de Michael Dante DiMartino y Bryan Konietzko. Todos los nombres, personajes, marcas e imágenes asociadas son propiedad intelectual y derechos reservados de <strong>Nickelodeon</strong> y <strong>Paramount Global</strong>. Este es un sitio web no oficial desarrollado por y para fans con fines exclusivamente divulgativos y recreativos.
+        </p>
+      </div>
+
+      <div class="pie__seccion">
+        <span class="pie__titulo">Navegación</span>
+        <ul class="pie__lista-vertical">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="libros.html">Libros</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="pie__seccion">
+        <span class="pie__titulo">Comunidad & Redes</span>
+        <ul class="pie__redes">
+          <li>
+            <a href="https://www.instagram.com/avatarlegends/" target="_blank" rel="noopener noreferrer" class="pie__enlace-social" aria-label="Instagram oficial de Avatar Legends (Nickelodeon)">
+              <svg class="pie__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span>Avatar Legends (Instagram)</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://avatar.fandom.com/es/wiki/Avatar_Wiki" target="_blank" rel="noopener noreferrer" class="pie__enlace-social pie__enlace-social--wiki" aria-label="Avatar Wiki en español (Fandom)">
+              <svg class="pie__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                <path d="M9 7h6m-6 4h6"></path>
+              </svg>
+              <span>Avatar Wiki (Fandom)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pie__subbarra">
+      <span>© 2026 Proyecto Fans Avatar: La Leyenda de Aang. Todos los derechos reservados a sus respectivos autores.</span>
+      <a href="#" class="pie__volver-arriba" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Volver arriba ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/loader.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
