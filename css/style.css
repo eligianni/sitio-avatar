@@ -1679,7 +1679,7 @@ body.pagina-historia .cta-final {
   width: min(880px, 92%);
   margin-inline: auto;
   text-align: center;
-  padding: 6rem 2rem;
+  padding: 10rem 2rem;
   border-radius: 28px;
   background: radial-gradient(ellipse 80% 70% at center, rgba(9,12,16,0.6) 0%, transparent 75%);
 }
@@ -1906,7 +1906,7 @@ body.pagina-historia .cta-final {
   width: min(880px, 92%);
   margin-inline: auto;
   text-align: center;
-  padding: 4.2rem 2rem;
+  padding: 10rem 2rem;
   border-radius: 28px;
   background: radial-gradient(ellipse 80% 70% at center, rgba(9,12,16,0.6) 0%, transparent 75%);
 }
