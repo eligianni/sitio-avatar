@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería | Avatar: La Leyenda de Aang</title>
+<meta name="description" content="Galería multimedia del universo de Avatar: mapas, paisajes elementales y arte del mundo de Aang.">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pagina-galeria">
+
+<div class="galeria-fondo-fijo" aria-hidden="true">
+  <div class="galeria-fondo-fijo__velo"></div>
+</div>
+
+<div id="preloader" aria-hidden="true">
+  <div class="preloader__simbolos">
+    <span class="preloader__simbolo agua" data-elemento="agua"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6C24 6 12 22 12 30a12 12 0 0 0 24 0C36 22 24 6 24 6Z" stroke-width="2" stroke-linejoin="round"/></svg></span>
+    <span class="preloader__simbolo tierra" data-elemento="tierra"><svg viewBox="0 0 48 48" fill="none"><path d="M6 34 18 14l6 10 4-6 14 26H6Z" stroke-width="2" stroke-linejoin="round"/></svg></span>
+    <span class="preloader__simbolo fuego" data-elemento="fuego"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6c4 8-4 10-4 16a8 8 0 0 0 16 0c0-6-4-8-2-14 6 4 10 12 10 18a16 16 0 0 1-32 0c0-8 6-14 12-20Z" stroke-width="2" stroke-linejoin="round"/></svg></span>
+    <span class="preloader__simbolo aire" data-elemento="aire"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="4" stroke-width="2"/><path d="M24 4c8 0 8 10 0 10M44 24c0 8-10 8-10 0M24 44c-8 0-8-10 0-10M4 24c0-8 10-8 10 0" stroke-width="2" stroke-linecap="round"/></svg></span>
+  </div>
+  <span class="preloader__texto">EQUILIBRANDO LOS CUATRO ELEMENTOS</span>
+</div>
+
+<header class="navbar">
+  <a href="index.html" class="navbar__marca">
+    <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="20" stroke="var(--air-1)" stroke-width="1.5"/><path d="M20 12H28V24H34L24 35L14 24H20V12Z" fill="var(--ink)"/></svg>
+    <span>Avatar</span>
+  </a>
+  <button class="navbar__toggle" id="navToggle" aria-expanded="false" aria-controls="navLista" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  <nav aria-label="Navegación principal">
+    <ul class="navbar__lista" id="navLista">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="historia.html">Historia</a></li>
+            <li class="navbar__item--con-submenu">
+        <a href="libros.html">Libros</a>
+        <ul class="navbar__submenu">
+          <li><a href="libros.html#libro-agua">Libro Agua</a></li>
+          <li><a href="libros.html#libro-tierra">Libro Tierra</a></li>
+          <li><a href="libros.html#libro-fuego">Libro Fuego</a></li>
+          <li><a href="libros.html#aun-hay-mas">Cómics</a></li>
+        </ul>
+      </li>
+      <li><a href="personajes.html">Personajes</a></li>
+      <li><a href="galeria.html" class="active" aria-current="page">Galería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="galeria-cielo" aria-labelledby="galeria-titulo">
+    <div class="galeria-cielo__velo"></div>
+    <div class="contenedor galeria-cielo__contenido">
+      <span class="pagina-hero__kicker">Multimedia</span>
+      <h1 id="galeria-titulo">Galería</h1>
+      <p>Mapas, paisajes elementales y arte del mundo de Avatar. Hacé click en cualquier imagen para verla en grande y pasar a la siguiente.</p>
+    </div>
+  </section>
+
+  <section class="galeria-seccion">
+    <div class="contenedor galeria-panel">
+      <div class="galeria-grid">
+
+      <figure class="galeria-item">
+        <button type="button" class="galeria-item__marco" style="--proporcion: 16/10" data-lightbox="assets/img/mapa-mundo.png" data-caption="Mapa del mundo — las cuatro naciones">
+          <img src="assets/img/mapa-mundo.png" alt="Mapa del mundo de Avatar" loading="lazy">
+        </button>
+        <figcaption class="galeria-item__pie">Mapa del mundo — las cuatro naciones</figcaption>
+      </figure>
+
+      <figure class="galeria-item">
+        <button type="button" class="galeria-item__marco" style="--proporcion: 1/1" data-lightbox="assets/img/fondo-inicio-principal.png" data-caption="El Estado Avatar">
+          <img src="assets/img/fondo-inicio-principal.png" alt="El Estado Avatar" loading="lazy">
+        </button>
+        <figcaption class="galeria-item__pie">El Estado Avatar</figcaption>
+      </figure>
+
+      <figure class="galeria-item">
+        <button type="button" class="galeria-item__marco" style="--proporcion: 16/9" data-lightbox="assets/img/historia.jpg" data-caption="Agua, Tierra, Fuego y Aire — el conflicto de los 100 años">
+          <img src="assets/img/historia.jpg" alt="Los cuatro elementos en conflicto" loading="lazy">
+        </button>
+        <figcaption class="galeria-item__pie">Agua, Tierra, Fuego y Aire</figcaption>
+      </figure>
+
+      <figure class="galeria-item">
+        <button type="button" class="galeria-item__marco" style="--proporcion: 4/5" data-lightbox="assets/img/norte.png" data-caption="Tribu Agua del Norte">
+          <img src="assets/img/norte.png" alt="Ciudad de la Tribu Agua del Norte" loading="lazy">
+        </button>
+        <figcaption class="galeria-item__pie">Tribu Agua del Norte</figcaption>
+      </figure>
+
+      <figure class="galeria-item">
+        <button type="button" class="galeria-item__marco" style="--proporcion: 16/9" data-lightbox="assets/img/leon-tortuga-tierra.png" data-caption="León tortuga, en las tierras del Reino Tierra">
+          <img src="assets/img/leon-tortuga-tierra.png" alt="León tortuga de tierra" loading="lazy">
+        </button>
+        <figcaption class="galeria-item__pie">León tortuga — Reino Tierra</figcaption>
+      </figure>
+
+      <figure class="galeria-item">
+        <button type="button" class="galeria-item__marco" style="--proporcion: 4/5" data-lightbox="assets/img/libro3-fuego.jpg" data-caption="La torre del eclipse, Nación del Fuego">
+          <img src="assets/img/libro3-fuego.jpg" alt="Torre de la Nación del Fuego durante el eclipse" loading="lazy">
+        </button>
+        <figcaption class="galeria-item__pie">Nación del Fuego — el eclipse</figcaption>
+      </figure>
+
+      <figure class="galeria-item">
+        <button type="button" class="galeria-item__marco" style="--proporcion: 16/10" data-lightbox="assets/img/appa-and-friends.jpg" data-caption="El Equipo Avatar viajando sobre Appa">
+          <img src="assets/img/appa-and-friends.jpg" alt="El equipo Avatar sobre Appa" loading="lazy">
+        </button>
+        <figcaption class="galeria-item__pie">De viaje sobre Appa</figcaption>
+      </figure>
+
+      <figure class="galeria-item">
+        <button type="button" class="galeria-item__marco" style="--proporcion: 1/1" data-lightbox="assets/img/aang-agua.png" data-caption="Aang practicando Agua control">
+          <img src="assets/img/aang-agua.png" alt="Aang practicando Agua control" loading="lazy">
+        </button>
+        <figcaption class="galeria-item__pie">Aang — Agua control</figcaption>
+      </figure>
+
+      <figure class="galeria-item">
+        <button type="button" class="galeria-item__marco" style="--proporcion: 16/10" data-lightbox="assets/img/amigos.jpg" data-caption="El Equipo Avatar — Travesuras en Omashu">
+          <img src="assets/img/amigos.jpg" alt="El Equipo Avatar en Omashu" loading="lazy">
+        </button>
+        <figcaption class="galeria-item__pie">El Equipo Avatar en Omashu</figcaption>
+      </figure>
+
+      <figure class="galeria-item">
+        <button type="button" class="galeria-item__marco" style="--proporcion: 16/10" data-lightbox="assets/img/aire.jpg" data-caption="Templo Aire — Santuario de los Nómadas del Aire">
+          <img src="assets/img/aire.jpg" alt="Templo Aire de los Nómadas" loading="lazy">
+        </button>
+        <figcaption class="galeria-item__pie">Santuario del Aire</figcaption>
+      </figure>
+
+      <figure class="galeria-item">
+        <button type="button" class="galeria-item__marco" style="--proporcion: 16/9" data-lightbox="assets/img/agua.jpg" data-caption="Agua Control — El fluir eterno de las olas">
+          <img src="assets/img/agua.jpg" alt="Olas y mareas de Agua control" loading="lazy">
+        </button>
+        <figcaption class="galeria-item__pie">Olas de Agua control</figcaption>
+      </figure>
+
+      <figure class="galeria-item">
+        <button type="button" class="galeria-item__marco" style="--proporcion: 16/9" data-lightbox="assets/img/fuego.png" data-caption="Nación del Fuego — El poder supremo de las llamas">
+          <img src="assets/img/fuego.png" alt="Llamas de la Nación del Fuego" loading="lazy">
+        </button>
+        <figcaption class="galeria-item__pie">Nación del Fuego — Furia ígnea</figcaption>
+      </figure>
+
+      <figure class="galeria-item">
+        <button type="button" class="galeria-item__marco" style="--proporcion: 4/3" data-lightbox="assets/img/azula_captura_a_kuei.png" data-caption="La caída de Ba Sing Se — Azula captura al Rey Kuei">
+          <img src="assets/img/azula_captura_a_kuei.png" alt="Azula y las Dai Li capturan al Rey Kuei" loading="lazy">
+        </button>
+        <figcaption class="galeria-item__pie">Azula captura al Rey Kuei</figcaption>
+      </figure>
+
+      <figure class="galeria-item">
+        <button type="button" class="galeria-item__marco" style="--proporcion: 4/3" data-lightbox="assets/img/toph.jpg" data-caption="Toph Beifong — La bandida ciega y mejor Maestra Tierra">
+          <img src="assets/img/toph.jpg" alt="Toph Beifong Maestra Tierra" loading="lazy">
+        </button>
+        <figcaption class="galeria-item__pie">Toph — Maestra Tierra</figcaption>
+      </figure>
+
+      <figure class="galeria-item">
+        <button type="button" class="galeria-item__marco" style="--proporcion: 4/5" data-lightbox="assets/img/katara-2.jpg" data-caption="Katara — Maestra del Agua en guardia">
+          <img src="assets/img/katara-2.jpg" alt="Katara en pose de Agua control" loading="lazy">
+        </button>
+        <figcaption class="galeria-item__pie">Katara — Maestra Agua</figcaption>
+      </figure>
+
+      <figure class="galeria-item">
+        <button type="button" class="galeria-item__marco" style="--proporcion: 16/9" data-lightbox="assets/img/azula-d.jpg" data-caption="Princesa Azula — El fuego azul implacable">
+          <img src="assets/img/azula-d.jpg" alt="Princesa Azula en combate" loading="lazy">
+        </button>
+        <figcaption class="galeria-item__pie">Princesa Azula — Fuego azul</figcaption>
+      </figure>
+
+      <figure class="galeria-item">
+        <button type="button" class="galeria-item__marco" style="--proporcion: 4/5" data-lightbox="assets/img/momo-2.jpg" data-caption="Momo — El curioso lémur alado">
+          <img src="assets/img/momo-2.jpg" alt="Momo el lémur alado" loading="lazy">
+        </button>
+        <figcaption class="galeria-item__pie">Momo — Lémur alado</figcaption>
+      </figure>
+
+      <figure class="galeria-item">
+        <button type="button" class="galeria-item__marco" style="--proporcion: 3/4" data-lightbox="assets/img/appa-b.jpg" data-caption="Appa — El noble bisonte volador">
+          <img src="assets/img/appa-b.jpg" alt="Appa el bisonte volador" loading="lazy">
+        </button>
+        <figcaption class="galeria-item__pie">Appa — Bisonte volador</figcaption>
+      </figure>
+
+    </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor pie__contenido">
+    <div class="pie__fila-principal">
+      <div class="pie__marca">
+        <a href="index.html" class="pie__logo">
+          <svg viewBox="0 0 48 48" fill="none" aria-hidden="true" width="28" height="28">
+            <circle cx="24" cy="24" r="20" stroke="var(--air-1)" stroke-width="1.5"/>
+            <path d="M20 12H28V24H34L24 35L14 24H20V12Z" fill="var(--ink)"/>
+          </svg>
+          <span>Avatar: La Leyenda de Aang</span>
+        </a>
+        <p class="pie__legales">
+          Avatar: The Last Airbender es una creación de Michael Dante DiMartino y Bryan Konietzko. Todos los nombres, personajes, marcas e imágenes asociadas son propiedad intelectual y derechos reservados de <strong>Nickelodeon</strong> y <strong>Paramount Global</strong>. Este es un sitio web no oficial desarrollado por y para fans con fines exclusivamente divulgativos y recreativos.
+        </p>
+      </div>
+
+      <div class="pie__seccion">
+        <span class="pie__titulo">Navegación</span>
+        <ul class="pie__lista-vertical">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="libros.html">Libros</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="pie__seccion">
+        <span class="pie__titulo">Comunidad & Redes</span>
+        <ul class="pie__redes">
+          <li>
+            <a href="https://www.instagram.com/avatarlegends/" target="_blank" rel="noopener noreferrer" class="pie__enlace-social" aria-label="Instagram oficial de Avatar Legends (Nickelodeon)">
+              <svg class="pie__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span>Avatar Legends (Instagram)</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://avatar.fandom.com/es/wiki/Avatar_Wiki" target="_blank" rel="noopener noreferrer" class="pie__enlace-social pie__enlace-social--wiki" aria-label="Avatar Wiki en español (Fandom)">
+              <svg class="pie__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                <path d="M9 7h6m-6 4h6"></path>
+              </svg>
+              <span>Avatar Wiki (Fandom)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pie__subbarra">
+      <span>© 2026 Proyecto Fans Avatar: La Leyenda de Aang. Todos los derechos reservados a sus respectivos autores.</span>
+      <a href="#" class="pie__volver-arriba" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Volver arriba ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/loader.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="cieloAgua" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0c1c2e"/>
+      <stop offset="100%" stop-color="#122840"/>
+    </linearGradient>
+    <linearGradient id="hieloLejos" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1d3c57"/>
+      <stop offset="100%" stop-color="#274b6b"/>
+    </linearGradient>
+    <linearGradient id="hieloCerca" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2b5578"/>
+      <stop offset="100%" stop-color="#3a86ff" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#cieloAgua)"/>
+  <circle cx="470" cy="90" r="46" fill="#48cae4" opacity="0.18"/>
+  <path d="M0 210 L60 170 100 205 150 150 210 200 260 165 320 210 380 175 440 215 500 180 560 220 600 195 600 400 0 400 Z" fill="url(#hieloLejos)"/>
+  <path d="M0 300 L50 255 110 295 170 245 230 290 300 250 360 300 420 260 490 305 560 270 600 300 600 400 0 400 Z" fill="url(#hieloCerca)"/>
+  <path d="M0 400 L0 340 40 310 90 345 150 320 190 400 Z" fill="#274b6b"/>
+</svg>

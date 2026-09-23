@@ -1,0 +1,21 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="cieloTierra" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#15201a"/>
+      <stop offset="100%" stop-color="#1c2b22"/>
+    </linearGradient>
+    <linearGradient id="montLejos" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22392c"/>
+      <stop offset="100%" stop-color="#2d4c3a"/>
+    </linearGradient>
+    <linearGradient id="montCerca" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d6a4f"/>
+      <stop offset="100%" stop-color="#52b788" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#cieloTierra)"/>
+  <circle cx="120" cy="80" r="38" fill="#52b788" opacity="0.15"/>
+  <path d="M0 260 L70 160 130 230 190 120 260 240 330 170 400 250 470 190 540 245 600 210 600 400 0 400 Z" fill="url(#montLejos)"/>
+  <path d="M0 330 L80 250 150 310 220 235 300 320 380 260 460 315 540 270 600 320 600 400 0 400 Z" fill="url(#montCerca)"/>
+  <rect x="0" y="370" width="600" height="30" fill="#1c2b22"/>
+</svg>
