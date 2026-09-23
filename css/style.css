@@ -993,6 +993,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   color: var(--ink-dim);
   margin-bottom: var(--gap-xs);
   margin: 1 rem;
+   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
 }
 
 .pagina-hero h1 {
@@ -1004,7 +1005,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 .pagina-hero p {
   color: var(--ink-dim);
   max-width: 60ch;
-  margin-top: var(--gap-sm);
+  margin-top: 2rem;
 }
 
 /* ---------- Cielo fijo de historia.html: una sola imagen larga + estrellas al scrollear ---------- */
@@ -1042,10 +1043,10 @@ body.pagina-historia { background: #0a0d16; }
 
 .historia-cielo {
   position: relative;
-  min-height: 100vh;
+  min-height: 95vh;
   display: flex;
   align-items: flex-end;
-  padding-bottom: var(--gap-xl);
+  padding-bottom: 9rem;
   background-image: url('../assets/img/fondo-historia2.png');
   background-size: cover;
   background-position: center top;
@@ -1073,10 +1074,10 @@ body.pagina-historia { background: #0a0d16; }
 }
 
 .historia-cielo p {
-  color: var(--ink-dim);
-  max-width: 60ch;
-  margin: var(--gap-sm) auto 0;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.75);
+   color: var(--ink-dim);
+   max-width: 60ch;
+   margin: 2rem auto 0;
+   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.75);
 }
 
 body.pagina-historia .historia-video,
@@ -1125,7 +1126,7 @@ body.pagina-historia .cta-final {
   width: min(880px, 92%);
   margin-inline: auto;
   text-align: center;
-  padding: 9rem 2rem;
+  padding: 10rem 2rem;
   border-radius: 28px;
   background: radial-gradient(ellipse 80% 70% at center, rgba(9,12,10,0.55) 0%, transparent 75%);
 }
@@ -1658,7 +1659,7 @@ body.pagina-historia .cta-final {
 
 .personajes-cielo {
   position: relative;
-  min-height: 48vh;
+  min-height: 53.1 vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1885,7 +1886,7 @@ body.pagina-historia .cta-final {
 
 .galeria-cielo {
   position: relative;
-  min-height: 48vh;
+  min-height: 53.1vh;
   display: flex;
   align-items: center;
   justify-content: center;
